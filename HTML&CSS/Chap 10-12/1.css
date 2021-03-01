@@ -1,0 +1,24 @@
+body {
+  font-family: "Times New Roman", Times, serif;
+}
+
+h1,
+h2 {
+  color: #3d91ef;
+}
+
+h2 {
+  background-color: #d1d0ce;
+}
+
+#indent {
+  text-indent: 50px;
+}
+
+#blue {
+  color: #3d91ef;
+}
+
+i {
+  color: red;
+}

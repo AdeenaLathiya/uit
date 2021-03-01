@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Assign1</title>
+    <link rel="stylesheet" href="./2.css" />
+    <script>
+      function uploadFunction() {
+        alert("Your picture has been uploaded");
+      }
+
+      function submitFunction() {
+        alert("Your order has been sent!");
+      }
+    </script>
+  </head>
+  <body>
+    <!-- <script>
+      function uploadFunction() {
+        alert("Your picture has been uploaded");
+      }
+
+      function submitFunction() {
+        alert("Your order has been sent!");
+      }
+    </script> -->
+
+    <form>
+      <h1 id="green">User Registration Form</h1>
+      <pre>User Name:                           <input type="text" name="UserName"></pre>
+      <pre>Password:                            <input type="password" name="password"></pre>
+      <pre>Date of Birth:                       <input type="date" name="dob"></pre>
+      <pre>Web URL:                             <input type="url" name="url"></pre>
+      <pre>Address:                             <input type="text" name="address"></pre>
+      <pre>City:                                <select name="city">
+        <option>Karachi</option>
+        <option>Lahore</option>
+        <option>Islamabad</option>
+      </select>
+      </pre>
+      <pre>State:                               <input type="text" name="state"></pre>
+      <pre>Zip:                                 <input type="text" name="zip"></pre>
+      <pre>Magazine:                            <select name="magazine" multiple="multiple">
+        <option>Newsweek</option>
+        <option>Time</option>
+        <option>Fortune</option>
+        <option>TV Guide</option>
+      </select>
+      </pre>
+      <textarea name="comments" cols="35" rows="5"></textarea>
+      <p>
+        <label>Upload your profile picture:</label>
+        <input type="file" name="picture" />
+        <br />
+        <input
+          type="submit"
+          value="Upload"
+          id="green"
+          onclick="uploadFunction()"
+        />
+      </p>
+      <input
+        type="submit"
+        name="send order"
+        value="Send Your Order"
+        id="green"
+        onclick="submitFunction()"
+      />
+
+      <!-- <script>
+        function uploadFunction() {
+          alert("Your picture has been uploaded");
+        }
+  
+        function submitFunction() {
+          alert("Your order has been sent!");
+        }
+      </script> -->
+    </form>
+
+    <!-- <script>
+      function uploadFunction() {
+        alert("Your picture has been uploaded");
+      }
+
+      function submitFunction() {
+        alert("Your order has been sent!");
+      }
+    </script> -->
+  </body>
+</html>

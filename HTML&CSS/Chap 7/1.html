@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Forms</title>
+  </head>
+  <body>
+    <form action="http://www.google.com">
+      <p>
+        <label>Username: </label>
+        <input type="text" name="username" size="15" maxlength="30" />
+      </p>
+      <p>
+        <label>Password: </label>
+        <input type="password" name="password" size="15" maxlength="30" />
+      </p>
+      <p>
+        <label>Date of Birth:</label>
+        <input type="date" name="birthday" />
+      </p>
+      <p>
+        <label>Web URL:</label>
+        <input type="url" name="url" />
+      </p>
+      <p>
+        <label>Address:</label>
+        <input type="text" name="address" />
+      </p>
+      <p>
+        <label>City:</label>
+        <select name="city">
+          <option value="karachi" selected>Karachi</option>
+          <option value="lahore">Lahore</option>
+          <option value="islamabad">Islamabad</option>
+        </select>
+      </p>
+      <p>
+        <label>State: </label>
+        <input type="text" name="state" />
+      </p>
+      <p>
+        <label>Zip:</label>
+        <input type="number" name="zip" />
+      </p>
+      <p>
+        <label>Magazine:</label>
+        <select name="magazine" size="4" multiple="multiple">
+          <option value="newsweek">Newsweek</option>
+          <option value="time">Time</option>
+          <option value="fortune">Fortune</option>
+          <option value="tv_guide">TV Guide</option>
+        </select>
+      </p>
+      <fieldset>
+        <legend>Contact details</legend>
+        <p>Email:</p>
+        <input type="email" name="email" />
+        <p>Mobile:</p>
+        <input type="text" name="mobile" />
+        <p>Telephone:</p>
+        <input type="text" name="telephone" />
+      </fieldset>
+      <p>Additional Comments:</p>
+      <textarea name="comments" cols="35" rows="5"></textarea>
+      <p>
+        <label>Upload your profile picture:</label>
+        <input type="file" name="picture" />
+        <br />
+        <input type="submit" value="Upload" />
+      </p>
+      <input type="submit" name="send order" value="Send Your Order" />
+      <p>
+        <label>Email Address: </label>
+        <input type="email" name="email" />
+      </p>
+      <p>
+        <label>Subscription:</label>
+        <input id="1" type="radio" name="subscription" value="1yr" checked />
+        <label for="1">1 Year</label>
+        <input id="2" type="radio" name="subscription" value="2yr" />
+        <label for="2">2 Years</label>
+      </p>
+      <p>
+        <input id="a" type="checkbox" name="agree" value="put_in_list" />
+        <label for="a">Yes! Put me on the list!</label>
+      </p>
+      <input
+        type="submit"
+        name="subscribe"
+        value="Subscribe"
+        style="background-color: skyblue"
+      />
+    </form>
+  </body>
+</html>

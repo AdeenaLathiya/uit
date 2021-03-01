@@ -1,0 +1,35 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 70%;
+}
+
+.gray {
+  background-color: #dcdcdc;
+}
+
+.header {
+  width: 300px;
+  height: 50px;
+  float: left;
+}
+
+.text-color {
+  padding: 0px 5px 50px;
+  color: #696969;
+}
+
+.light-gray {
+  background-color: #c0c0c0;
+}
+
+.purple {
+  color: #9370db;
+}
+
+.glass {
+  width: 250px;
+}
+
+i {
+  color: red;
+}

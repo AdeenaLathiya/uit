@@ -1,0 +1,19 @@
+.center {
+  text-align: center;
+}
+
+h1,
+h2 {
+  color: red;
+}
+
+.blue {
+  color: blue;
+}
+
+.gray {
+  color: white;
+  background-color: #c0c0c0;
+  font-weight: bold;
+  padding-left: 10px;
+}
