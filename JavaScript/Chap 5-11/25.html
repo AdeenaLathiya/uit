@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>USER INPUT & CONDITIONAL STATEMENTS</title>
+    <script>
+      var item1name = prompt("Enter name of item 1");
+      var item2name = prompt("Enter name of item 2");
+      var item1price = prompt("Enter price of item 1");
+      var item2price = prompt("Enter price of item 2");
+      var item1quantity = prompt("Enter quantity of item 1");
+      var item2quantity = prompt("Enter quantity of item 2");
+      var shippingCharges = 250;
+
+      var totalCost =
+        parseInt(item1price) * parseInt(item1quantity) +
+        parseInt(item2price) * parseInt(item2quantity) +
+        shippingCharges;
+
+      if (totalCost > 2000) {
+        var discountedPrice = totalCost - totalCost * 0.1;
+      }
+
+      document.write("<h1>Shopping Cart</h1><br />");
+
+      document.write("Price of " + item1name + " is " + item1price + "<br />");
+      document.write(
+        "Quantity of " + item1name + " is " + item1quantity + "<br />"
+      );
+
+      document.write("Price of " + item2name + " is " + item2price + "<br />");
+      document.write(
+        "Quantity of " + item2name + " is " + item2quantity + "<br />"
+      );
+
+      document.write("Shipping Charges " + shippingCharges + "<br /><br />");
+      document.write("Total cost of your order is " + totalCost + " PKR");
+      document.write("Discounted Price is " + discountedPrice + " PKR");
+    </script>
+  </head>
+  <body></body>
+</html>

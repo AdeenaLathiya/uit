@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>USER INPUT & CONDITIONAL STATEMENTS</title>
+    <script>
+      var firstNumber = prompt("Enter first number");
+      var secondNumber = prompt("Enter second number");
+      var operation = prompt("Enter operation(+, -, *, /, %)");
+
+      if (operation === "+") {
+        alert(
+          firstNumber +
+            operation +
+            secondNumber +
+            " is " +
+            parseInt(firstNumber) +
+            parseInt(secondNumber)
+        );
+      }
+
+      if (operation === "-") {
+        alert(
+          firstNumber +
+            operation +
+            secondNumber +
+            " is " +
+            parseInt(firstNumber) -
+            parseInt(secondNumber)
+        );
+      }
+
+      if (operation === "*") {
+        alert(
+          firstNumber +
+            operation +
+            secondNumber +
+            " is " +
+            parseInt(firstNumber) * parseInt(secondNumber)
+        );
+      }
+
+      if (operation === "/") {
+        alert(
+          firstNumber +
+            operation +
+            secondNumber +
+            " is " +
+            parseInt(firstNumber) / parseInt(secondNumber)
+        );
+      }
+
+      if (operation === "%") {
+        alert(
+          firstNumber +
+            operation +
+            secondNumber +
+            " is " +
+            (parseInt(firstNumber) % parseInt(secondNumber))
+        );
+      }
+    </script>
+  </head>
+  <body></body>
+</html>

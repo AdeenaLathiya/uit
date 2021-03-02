@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>USER INPUT & CONDITIONAL STATEMENTS</title>
+    <script>
+      var marks1 = prompt("Enter marks of subject 1");
+      var marks2 = prompt("Enter marks of subject 2");
+      var marks3 = prompt("Enter marks of subject 3");
+
+      var total = parseInt(marks1) + parseInt(marks2) + parseInt(marks3);
+
+      var percentage = (total / 300) * 100;
+
+      var grade;
+      var remarks;
+
+      if (percentage >= 80) {
+        grade = "A-one";
+        remarks = "Excellent";
+      }
+
+      if (percentage >= 70) {
+        grade = "A";
+        remarks = "Good";
+      }
+
+      if (percentage >= 60) {
+        grade = "B";
+        remarks = "You need to improve";
+      }
+
+      if (percentage < 60) {
+        grade = "Fail";
+        remarks = "Sorry";
+      }
+
+      document.write("<h1>Marks Sheet</h1><br />");
+      document.write("Total Marks: 300 <br />");
+      document.write("Marks obtained: " + total + "<br />");
+      document.write("Percentage: " + percentage + "<br />");
+      document.write("Grade: " + grade + "<br />");
+      document.write("Remarks: " + remarks + "<br />");
+    </script>
+  </head>
+  <body></body>
+</html>
