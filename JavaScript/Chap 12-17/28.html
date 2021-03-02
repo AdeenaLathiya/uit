@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>| IF STATEMENTS NESTED | ARRAYS |</title>
+    <script>
+      var colors = ["White", "Black"];
+      document.write("Array Elements: [" + colors + "]<br />");
+
+      // a
+      var colorBeginning = prompt(
+        "Enter color to be added in the beginning of the array"
+      );
+      colors.unshift(colorBeginning);
+      document.write("Part a. Updated Array Elements: [" + colors + "]<br />");
+
+      // b
+      var colorEnding = prompt(
+        "Enter color to be added in the ending of the array"
+      );
+      colors.unshift(colorEnding);
+      document.write("Part b. Updated Array Elements: [" + colors + "]<br />");
+
+      // c
+      var moreColor1 = prompt(
+        "Enter more color to be added in the beginning of the array"
+      );
+      var moreColor2 = prompt(
+        "Enter more color to be added in the beginning of the array"
+      );
+      colors.unshift(moreColor1, moreColor2);
+      document.write("Part c. Updated Array Elements: [" + colors + "]<br />");
+
+      // d
+      colors.shift(colors[0]);
+      document.write("Part d. Updated Array Elements: [" + colors + "]<br />");
+
+      // e
+      colors.pop(colors[4]);
+      document.write("Part e. Updated Array Elements: [" + colors + "]<br />");
+
+      // f
+      var colorAddIndex = prompt("Enter color index");
+      var colorAddName = prompt("Enter color name");
+      colors.splice(colorAddIndex, 0, colorAddName);
+      document.write("Part f. Updated Array Elements: [" + colors + "]<br />");
+
+      // g
+      var colorDelIndex = prompt("Enter color index");
+      var colorDelIndex = prompt("Enter how many colors");
+      colors.splice(colorDelIndex, colorDelIndex);
+      document.write("Part g. Updated Array Elements: [" + colors + "]<br />");
+    </script>
+  </head>
+  <body></body>
+</html>
