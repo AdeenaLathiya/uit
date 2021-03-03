@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>| FUNCTIONS |</title>
+    <script>
+      function calcReverse() {
+        var num = prompt("Enter a number");
+        document.write("Number: " + num + "<br />");
+
+        num = num + "";
+        var reverseNum = num.split("").reverse().join("");
+        document.write("Reverse: " + reverseNum);
+      }
+
+      calcReverse();
+    </script>
+  </head>
+  <body></body>
+</html>

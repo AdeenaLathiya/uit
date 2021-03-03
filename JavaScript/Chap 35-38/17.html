@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>| FUNCTIONS |</title>
+    <script>
+      function calcUpperCase(str) {
+        var arr = str;
+        document.write("Example String: " + arr + "<br />");
+
+        arr = str.split(" ");
+        var arrayInUpperCase = [];
+        
+        for (var i = 0; i < arr.length; i++) {
+          arrayInUpperCase.push(
+            arr[i].charAt(0).toUpperCase() + arr[i].slice(1)
+          );
+        }
+        arrayInUpperCase = arrayInUpperCase.join(" ");
+        document.write("Expected Output: " + arrayInUpperCase);
+      }
+
+      calcUpperCase("the quick brown fox");
+    </script>
+  </head>
+  <body></body>
+</html>

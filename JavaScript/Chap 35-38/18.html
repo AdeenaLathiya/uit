@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>| FUNCTIONS |</title>
+    <script>
+      function calcLargestString(str) {
+        var arr = str;
+        document.write("Example String: " + arr + "<br />");
+
+        arr = str.match(/\w[a-z]{0,}/gi);
+        var result = arr[0];
+
+        for (var x = 1; x < arr.length; x++) {
+          if (result.length < arr[x].length) {
+            result = arr[x];
+          }
+        }
+        document.write("Expected Output: " + result);
+      }
+
+      calcLargestString("Web Development Tutorial");
+    </script>
+  </head>
+  <body></body>
+</html>
