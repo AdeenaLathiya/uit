@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>| FUNCTIONS |</title>
+    <script>
+      function calcLargest() {
+        var array = [];
+        var end = prompt("Enter how many numbers");
+
+        for (var i = 0; i < end; i++) {
+          var num = prompt("Enter number");
+          array.push(parseInt(num));
+        }
+        document.write("Array: " + array + "<br />");
+
+        arrSum = array.reduce(function (a, b) {
+          return a + b;
+        }, 0);
+
+        document.write("Sum: " + arrSum);
+      }
+
+      calcLargest();
+    </script>
+  </head>
+  <body></body>
+</html>

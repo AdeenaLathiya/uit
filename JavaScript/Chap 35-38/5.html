@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>| FUNCTIONS |</title>
+    <script>
+      function calc(num1, num2, operation) {
+        if (operation === "+") {
+          var sum = num1 + num2;
+          document.write(
+            num1 + " " + operation + " " + num2 + " = " + sum + "<br />"
+          );
+          return sum;
+        } else if (operation === "-") {
+          var diff = num1 - num2;
+          document.write(
+            num1 + " " + operation + " " + num2 + " = " + diff + "<br />"
+          );
+          return diff;
+        } else if (operation === "*") {
+          var product = num1 * num2;
+          document.write(
+            num1 + " " + operation + " " + num2 + " = " + product + "<br />"
+          );
+          return product;
+        } else if (operation === "/") {
+          var quotient = num1 / num2;
+          document.write(
+            num1 + " " + operation + " " + num2 + " = " + quotient + "<br />"
+          );
+          return quotient;
+        } else if (operation === "%") {
+          var rem = num1 % num2;
+          document.write(
+            num1 + " " + operation + " " + num2 + " = " + rem + "<br />"
+          );
+          return rem;
+        }
+      }
+
+      var returnAdd = calc(2, 3, "+");
+      var returnSub = calc(6, 3, "-");
+      var returnMul = calc(10, 5, "*");
+      var returnDiv = calc(16, 4, "/");
+      var returnRem = calc(27, 3, "%");
+    </script>
+  </head>
+  <body></body>
+</html>

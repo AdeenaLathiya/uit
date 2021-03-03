@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>| FUNCTIONS |</title>
+    <script>
+      function calcLargest() {
+        var array = [];
+        var end = prompt("Enter how many numbers");
+
+        for (var i = 0; i < end; i++) {
+          var num = prompt("Enter number");
+          array.push(num);
+        }
+        array.sort();
+        document.write("Sorted array: " + array);
+      }
+
+      calcLargest();
+    </script>
+  </head>
+  <body></body>
+</html>
