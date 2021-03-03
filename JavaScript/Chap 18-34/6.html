@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>| FOR LOOPS |</title>
+    <script>
+      var items = prompt("Enter number of items");
+      var itemsArray = [];
+
+      for (var i = 0; i < items; i++) {
+        var value = prompt("Enter value of index " + i);
+        itemsArray.push(value);
+      }
+
+      document.write("Number of items: " + items + "<br />");
+      document.write("Items: <br /><br />");
+
+      for (var k = 0; i < itemsArray.length; i++) {
+        document.write(itemsArray[k] + "<br />");
+      }
+    </script>
+  </head>
+  <body></body>
+</html>

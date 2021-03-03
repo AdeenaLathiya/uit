@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>| FOR LOOPS |</title>
+    <script>
+      var scores = [12, 45, 3, 22, 34, 50];
+
+      var stopValue = prompt("Enter number");
+
+      for (var i = 0; i < scores.length; i++) {
+        if (parseInt(stopValue) === scores[i]) {
+          var newScores = scores.slice(
+            0,
+            scores.indexOf(parseInt(stopValue)) + 1
+          );
+        }
+      }
+
+      document.write("New Array: " + newScores);
+    </script>
+  </head>
+  <body></body>
+</html>
