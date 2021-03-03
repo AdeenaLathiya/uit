@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>| SWITCH STATEMENTS | WHILE...DO--WHILE LOOPS |</title>
+    <script>
+      var firstNumber = prompt("Enter first number");
+      var secondNumber = prompt("Enter second number");
+      var operation = prompt("Enter operation(+, -, *, /, %)");
+
+      switch (operation) {
+        case "+":
+          var sum = parseInt(firstNumber) + parseInt(secondNumber);
+          alert("Sum is: " + sum);
+          break;
+
+        case "-":
+          var diff = parseInt(firstNumber) - parseInt(secondNumber);
+          alert("Difference is: " + diff);
+          break;
+
+        case "*":
+          var product = parseInt(firstNumber) * parseInt(secondNumber);
+          alert("Product is: " + product);
+          break;
+
+        case "/":
+          var quotient = parseInt(firstNumber) / parseInt(secondNumber);
+          alert("Quotient is: " + quotient);
+          break;
+
+        case "%":
+          var rem = parseInt(firstNumber) % parseInt(secondNumber);
+          alert("Remainder is: " + rem);
+          break;
+
+        default:
+          alert("Operator undefined");
+          break;
+      }
+    </script>
+  </head>
+  <body></body>
+</html>
