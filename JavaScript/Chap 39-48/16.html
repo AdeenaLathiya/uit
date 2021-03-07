@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>| SWITCH STATEMENTS | WHILE...DO--WHILE LOOPS |</title>
+    <script>
+      var items = prompt("Enter number of items");
+      var itemsArray = [];
+
+      document.write("Using While Loop <br />");
+      var i = 0;
+      while (i < items) {
+        var value = prompt("Enter value of index " + i);
+        itemsArray.push(value);
+        i++;
+      }
+
+      document.write("<br />");
+
+      document.write("Number of items: " + items + "<br />");
+      document.write("Items: <br /><br />");
+
+      var k = 0;
+      while (i < itemsArray.length) {
+        document.write(itemsArray[k] + "<br />");
+        i++;
+      }
+
+      var items = prompt("Enter number of items");
+      var itemsArray = [];
+      document.write("<br />Using Do-While Loop <br />");
+      var j = 0;
+      do {
+        var value = prompt("Enter value of index " + j);
+        itemsArray.push(value);
+        j++;
+      } while (j < items);
+
+      document.write("<br />");
+
+      document.write("Number of items: " + items + "<br />");
+      document.write("Items: <br /><br />");
+
+      var m = 0;
+      do {
+        document.write("Element at index " + m + " is " + A[j] + "<br />");
+        m++;
+      } while (j < itemsArray.length);
+    </script>
+  </head>
+  <body></body>
+</html>

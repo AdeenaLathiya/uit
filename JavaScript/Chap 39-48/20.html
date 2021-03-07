@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>| SWITCH STATEMENTS | WHILE...DO--WHILE LOOPS |</title>
+    <script>
+      document.write("Using While Loop <br />");
+      var scores = [12, 45, 3, 22, 34, 50];
+
+      var stopValue = prompt("Enter number");
+
+      var i = 0;
+      while (i < scores.length) {
+        document.write("<tr>");
+        if (parseInt(stopValue) === scores[i]) {
+          var newScores = scores.slice(
+            0,
+            scores.indexOf(parseInt(stopValue)) + 1
+          );
+        }
+        i++;
+      }
+      document.write("New Array: " + newScores);
+
+      document.write("<br />");
+
+      document.write("<br />Using Do-While Loop <br />");
+      var scores = [12, 45, 3, 22, 34, 50];
+
+      var stopValue = prompt("Enter number");
+      var i = 0;
+      do {
+        if (parseInt(stopValue) === scores[i]) {
+          var newScores = scores.slice(
+            0,
+            scores.indexOf(parseInt(stopValue)) + 1
+          );
+        }
+      } while (i < scores.length);
+
+      document.write("New Array: " + newScores);
+    </script>
+  </head>
+  <body></body>
+</html>

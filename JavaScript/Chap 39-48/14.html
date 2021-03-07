@@ -3,20 +3,21 @@
   <head>
     <title>| SWITCH STATEMENTS | WHILE...DO--WHILE LOOPS |</title>
     <script>
+      var A = ["Nokia", "Samsung", "Apple", "Sony", "Huawei"];
+
       document.write("Using While Loop <br />");
-      var i = 1;
-      while (i <= length) {
-        document.write(number + " x " + i + " = " + number * i + "<br />");
+      var i = 0;
+      while (i < A.length) {
+        document.write(A[i] + "<br />");
         i++;
       }
 
       document.write("<br />Using Do-While Loop <br />");
-      var j = 1;
+      var j = 0;
       do {
-        document.write(number + " x " + j + " = " + number * i + "<br />");
-
+        document.write(A[j] + "<br />");
         j++;
-      } while (j <= length);
+      } while (j < A.length);
     </script>
   </head>
   <body></body>

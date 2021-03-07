@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>| SWITCH STATEMENTS | WHILE...DO--WHILE LOOPS |</title>
+    <style>
+      table,
+      td {
+        border: 1px solid black;
+      }
+    </style>
+    <script>
+      document.write("Using While Loop <br />");
+      var students = ["Ali", "Sami", "Taha", "Inam"];
+      var scores = [57, 73, 89, 90];
+
+      document.write("<table>");
+      document.write("<tr>");
+      document.write("<td>Students</td>");
+      document.write("<td>Scores</td>");
+      document.write("</tr>");
+
+      var i = 0;
+      while (i < students.length) {
+        document.write("<tr>");
+
+        document.write("<td>");
+        document.write(students[i]);
+        document.write("</td>");
+
+        document.write("<td>");
+        document.write(scores[i]);
+        document.write("</td>");
+
+        document.write("</tr>");
+        i++;
+      }
+      document.write("</table>");
+
+      document.write("<br />");
+
+      document.write("<br />Using Do-While Loop <br />");
+      var students = ["Ali", "Sami", "Taha", "Inam"];
+      var scores = [57, 73, 89, 90];
+
+      document.write("<table>");
+      document.write("<tr>");
+      document.write("<td>Students</td>");
+      document.write("<td>Scores</td>");
+      document.write("</tr>");
+
+      var i = 0;
+      do {
+        document.write("<tr>");
+
+        document.write("<td>");
+        document.write(students[i]);
+        document.write("</td>");
+
+        document.write("<td>");
+        document.write(scores[i]);
+        document.write("</td>");
+
+        document.write("</tr>");
+        i++;
+      } while (i < students.length);
+
+      document.write("</table>");
+    </script>
+  </head>
+  <body></body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>| SWITCH STATEMENTS | WHILE...DO--WHILE LOOPS |</title>
+    <style>
+      table,
+      td {
+        border: 1px solid black;
+      }
+    </style>
+    <script>
+      document.write("Using While Loop <br />");
+      var A = ["cake", "apple pie", "cookie", "chips", "patties"];
+      var item = prompt(
+        "Welcome to ABC Bakery. What do you want to order sir/ma'am?"
+      );
+
+      var i = 0;
+      while (i < A.length) {
+        if (item === A[i]) {
+          document.write(
+            item + " is <b>available</b> at index " + i + " in our bakery"
+          );
+          break;
+        }
+        i++;
+      }
+
+      if (item !== A[i]) {
+        document.write(
+          "We are sorry. " + item + " is <b>not available</b> in our bakery"
+        );
+      }
+
+      document.write("<br />");
+
+      document.write("<br />Using Do-While Loop <br />");
+      var A = ["cake", "apple pie", "cookie", "chips", "patties"];
+      var item = prompt(
+        "Welcome to ABC Bakery. What do you want to order sir/ma'am?"
+      );
+
+      var i = 0;
+      do {
+        if (item === A[i]) {
+          document.write(
+            item + " is <b>available</b> at index " + i + " in our bakery"
+          );
+          break;
+        }
+        i++;
+      } while (i < A.length);
+
+      if (item !== A[i]) {
+        document.write(
+          "We are sorry. " + item + " is <b>not available</b> in our bakery"
+        );
+      }
+    </script>
+  </head>
+  <body></body>
+</html>

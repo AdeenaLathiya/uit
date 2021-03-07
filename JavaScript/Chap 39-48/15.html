@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>| SWITCH STATEMENTS | WHILE...DO--WHILE LOOPS |</title>
+    <script>
+      var A = ["apple", "banana", "mango", "orange", "strawberry"];
+
+      document.write("Using While Loop <br />");
+      var i = 0;
+      while (i < A.length) {
+        document.write(A[i] + "<br />");
+        i++;
+      }
+
+      document.write("<br />");
+
+      var i = 0;
+      while (i < A.length) {
+        document.write("Element at index " + i + " is " + A[i] + "<br />");
+        i++;
+      }
+
+      document.write("<br />Using Do-While Loop <br />");
+      var j = 0;
+      do {
+        document.write(A[j] + "<br />");
+        j++;
+      } while (j < A.length);
+
+      document.write("<br />");
+
+      var j = 0;
+      do {
+        document.write("Element at index " + j + " is " + A[j] + "<br />");
+
+        j++;
+      } while (j < A.length);
+    </script>
+  </head>
+  <body></body>
+</html>
