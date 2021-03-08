@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>| EVENTS |</title>
+    <style>
+      img {
+        border: 5px solid #25b1bb;
+        padding-left: 50px;
+      }
+    </style>
+    <script>
+      function displayContent() {
+        if (document.getElementById("buttonOne").innerHTML === "Read more.") {
+          document.getElementById("paraOne").innerHTML =
+            "This is a mobile phone which has the latest features of 2020";
+          document.getElementById("buttonOne").innerHTML = "Read less";
+        } else {
+          document.getElementById("paraOne").innerHTML =
+            "This is a mobile phone";
+        }
+        document.getElementById("buttonOne").innerHTML = "Read more";
+      }
+    </script>
+  </head>
+  <body>
+    <div>
+      <img src="./1.png" />
+      <p id="paraOne">This is a mobile phone</p>
+      <button id="buttonOne" onclick="displayContent()">Read more</button>
+    </div>
+  </body>
+</html>

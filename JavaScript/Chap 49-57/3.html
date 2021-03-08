@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>| EVENTS |</title>
+    <style>
+      #updateForm {
+        visibility: hidden;
+      }
+    </style>
+  </head>
+  <body>
+    <fieldset>
+      <legend>Enter Table Values</legend>
+      <form>
+        <label for="index">Index:</label>
+        <input type="text" id="index" />
+        <br /><br />
+
+        <label for="name">Name:</label>
+        <input type="text" id="name" />
+        <br /><br />
+
+        <label for="class">Class:</label>
+        <input type="text" id="class" />
+        <br /><br />
+
+        <button type="submit" id="submit">Submit</button>
+      </form>
+    </fieldset>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Index</th>
+          <th>Name</th>
+          <th>Class</th>
+          <th>Delete</th>
+          <th>Edit</th>
+        </tr>
+      </thead>
+      <tbody id="myTable"></tbody>
+    </table>
+
+    <fieldset id="updateForm">
+      <legend>Table Values</legend>
+      <form>
+        <br />
+        <label for="index">Index:</label>
+        <input type="text" id="updateIndex" />
+        <br /><br />
+
+        <label for="name">Name:</label>
+        <input type="text" id="updateName" />
+        <br /><br />
+
+        <label for="class">Class:</label>
+        <input type="text" id="updateClass" />
+        <br /><br />
+
+        <button type="submit" id="update">Update</button>
+      </form>
+    </fieldset>
+
+    <script>
+      const submit = document.getElementById("submit");
+      submit.onclick = function (e) {
+        e.preventDefault();
+        var Index = document.getElementById("index").value;
+        var Name = document.getElementById("name").value;
+        var Class = document.getElementById("class").value;
+
+        var Table = document.getElementById("myTable");
+        var tr = document.createElement("tr");
+        var td1 = document.createElement("td");
+        var td2 = document.createElement("td");
+        var td3 = document.createElement("td");
+        var td4 = document.createElement("td");
+        var td5 = document.createElement("td");
+
+        tr.appendChild(td1);
+        tr.appendChild(td2);
+        tr.appendChild(td3);
+        tr.appendChild(td4);
+        tr.appendChild(td5);
+
+        td1.innerHTML = Index;
+        td2.innerHTML = Name;
+        td3.innerHTML = Class;
+        td4.innerHTML = "<button onclick='delRow()'>Delete</button>";
+        td5.innerHTML = "<button onclick='editRow()'>Edit</button>";
+
+        Table.appendChild(tr);
+      };
+
+      function delRow() {
+        var td = e.target.parentNode;
+        var tr = td.parentNode;
+        tr.parentNode.removeChild(tr);
+      }
+
+      function editRow() {
+        var updateForm = document.getElementById("updateForm");
+        updateForm.style.visibility = "visible";
+
+        var Index = document.getElementById("updateIndex").value;
+        var Name = document.getElementById("updateName").value;
+        var Class = document.getElementById("updateClass").value;
+
+        var td = e.target.parentNode.parentNode.childNodes;
+
+        var finalIndex = td[0].innerHTML;
+        var finalName = td[1].innerHTML;
+        var finalStatus = td[2].innerHTML;
+
+        var update = document.getElementById("update");
+
+        Index.value = finalIndex;
+        Name.value = finalName;
+        Class.value = finalStatus;
+
+        updateForm.style.visibility = "visible";
+
+        update.onclick = function (e) {
+          e.preventDefault();
+          updateForm.style.visibility = "visible";
+
+          td[0].innerHTML = Index.value;
+          td[1].innerHTML = Name.value;
+          td[2].innerHTML = Class.value;
+
+          finalIndex = td[0].innerHTML;
+          finalName = td[1].innerHTML;
+          finalStatus = td[2].innerHTML;
+        };
+      }
+    </script>
+  </body>
+</html>
