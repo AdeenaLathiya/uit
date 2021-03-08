@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>| SWITCH STATEMENTS | WHILE...DO--WHILE LOOPS |</title>
+    <script>
+      document.write("Using While Loop <br />");
+      var num = prompt("Enter number of lines");
+      var i = 1;
+      while (i <= num) {
+        var j = 1;
+        while (j <= i) {
+          document.write("*");
+          j++;
+        }
+        document.write("<br />");
+        i++;
+      }
+
+      document.write("<br />");
+
+      document.write("<br />Using Do-While Loop <br />");
+      var num = prompt("Enter number of lines");
+      var i = 1;
+      do {
+        var j = 1;
+        do {
+          document.write("*");
+          j++;
+        } while (j <= i);
+        document.write("<br />");
+        i++;
+      } while (i <= num);
+    </script>
+  </head>
+  <body></body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>| SWITCH STATEMENTS | WHILE...DO--WHILE LOOPS |</title>
+    <script>
+      document.write("Using While Loop <br />");
+      var product = 1;
+      var i = 0;
+      while (i <= 7) {
+        if (i % 2 == 0) {
+          product = product * i;
+        }
+        i++;
+      }
+
+      document.write(
+        "The product of the odd integers from 1 to 7 is " + product
+      );
+
+      document.write("<br />");
+
+      document.write("<br />Using Do-While Loop <br />");
+      var product = 1;
+      var i = 0;
+      do {
+        if (i % 2 == 0) {
+          product = product * i;
+        }
+        i++;
+      } while (i <= 7);
+
+      document.write(
+        "The product of the odd integers from 1 to 7 is " + product
+      );
+    </script>
+  </head>
+  <body></body>
+</html>
