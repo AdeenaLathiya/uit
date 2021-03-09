@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>| OBJECTS |</title>
+    <script>
+      function StudentsData(name, age, myClass, monthlyFee, subjects) {
+        (this.name = name),
+          (this.age = age),
+          (this.myClass = myClass),
+          (this.monthlyFee = monthlyFee),
+          (this.subjects = subjects);
+      }
+
+      var studentOne = new StudentsData("Ali", 10, 2, 250, [
+        "Math",
+        "Urdu",
+        "English",
+      ]);
+      document.write("StudentOne data: <br />");
+      document.write(
+        '{ name: "' +
+          studentOne.name +
+          '", age: "' +
+          studentOne.age +
+          '", myClass: "' +
+          studentOne.myClass +
+          '", monthlyFee: "' +
+          studentOne.monthlyFee +
+          '", subjects: "' +
+          studentOne.subjects +
+          '" }' +
+          ",<br /><br />"
+      );
+
+      var studentTwo = new StudentsData("Imran", 1, 5, 250, [
+        "Islamiat",
+        "Physics",
+        "Math",
+      ]);
+      document.write("StudentTwo data: <br />");
+      document.write(
+        '{ name: "' +
+          studentTwo.name +
+          '", age: "' +
+          studentTwo.age +
+          '", myClass: "' +
+          studentTwo.myClass +
+          '", monthlyFee: "' +
+          studentTwo.monthlyFee +
+          '", subjects: "' +
+          studentTwo.subjects +
+          '" }' +
+          ",<br /><br />"
+      );
+
+      var studentThree = new StudentsData("Fatima", 30, 10, 250, [
+        "Chemistry",
+        "Geography",
+        "Statistics",
+      ]);
+      document.write("StudentThree data: <br />");
+      document.write(
+        '{ name: "' +
+          studentThree.name +
+          '", age: "' +
+          studentThree.age +
+          '", myClass: "' +
+          studentThree.myClass +
+          '", monthlyFee: "' +
+          studentThree.monthlyFee +
+          '", subjects: "' +
+          studentThree.subjects +
+          '" }' +
+          ",<br /><br />"
+      );
+    </script>
+  </head>
+</html>

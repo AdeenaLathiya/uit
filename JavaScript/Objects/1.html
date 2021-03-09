@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>| OBJECTS |</title>
+    <script>
+      var itemsArray = [
+        { name: "juice", price: "50", quantity: "3" },
+        { name: "cookie", price: "30", quantity: "9" },
+        { name: "shirt", price: "880", quantity: "1" },
+        { name: "pen", price: "100", quantity: "2" },
+      ];
+
+      document.write("Items Array: <br />");
+
+      for (var i = 0; i < itemsArray.length; i++) {
+        document.write(
+          '{ name: "' +
+            itemsArray[i].name +
+            '", price: "' +
+            itemsArray[i].price +
+            '", quantity: "' +
+            itemsArray[i].quantity +
+            '" }' +
+            ",<br />"
+        );
+      }
+
+      document.write("<br />");
+
+      function calcPrice() {
+        var total = 0;
+        for (var i = 0; i < itemsArray.length; i++) {
+          var totalOfEachItem = itemsArray[i].price * itemsArray[i].quantity;
+          total += totalOfEachItem;
+
+          document.write(
+            "Total of item " +
+              itemsArray[i].name +
+              " is: " +
+              totalOfEachItem +
+              "<br />"
+          );
+        }
+
+        document.write("<br />");
+
+        document.write("Total is: " + total);
+      }
+
+      calcPrice();
+    </script>
+  </head>
+</html>

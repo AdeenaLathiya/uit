@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>| OBJECTS |</title>
+    <script>
+      function Records(name, gender, education, profession, address) {
+        (this.name = name),
+          (this.gender = gender),
+          (this.education = education),
+          (this.profession = profession),
+          (this.address = address);
+      }
+
+      var records = [];
+
+      function get(name, male, female, education, profession, address) {
+        var userName = document.getElementById("name").nodeValue;
+
+        if (document.getElementById(male).checked) {
+          var userGender = document.getElementById("male").value;
+        }
+
+        if (document.getElementById(female).checked) {
+          var userGender = document.getElementById("female").value;
+        }
+
+        var userEduList = document.getElementById("education");
+        var userEdu = userEduList.options[userEduList.selectedIndex].text;
+
+        var userProfList = document.getElementById("profession");
+        var userProf = userProfList.options[userProfList.selectedIndex].text;
+
+        var userAddress = document.getElementById("address").value;
+
+        var record = new Records(
+          userName,
+          userGender,
+          userEdu,
+          userProf,
+          userAddress
+        );
+
+        alert(
+          "Record added successfully \nName: " +
+            userName +
+            "\nGender: " +
+            "\nEducation: " +
+            userEdu +
+            "\nProfesion: " +
+            userProf +
+            "\nAddress: " +
+            userAddress
+        );
+
+        if (typeof Storage !== "undefined") {
+          if (localStorage.clickcount) {
+            localStorage.clickcount = Number(localStorage.clickcount) + 1;
+          } else {
+            localStorage.clickcount = 1;
+          }
+
+          document.getElementById("population").innerHTML =
+            "Current Population Size is: " + localStorage.clickcount;
+        } else {
+          document.getElementById("population").innerHTML =
+            "Sorry, your browser does not support web storage";
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <form action="JavaScript:void(0)" method="get">
+      <fieldset>
+        <label for="name">Name: </label>
+        <input type="text" id="name" name="userName" />
+        <br /><br />
+
+        <label for="gender">Gender: </label>
+        <br />
+
+        <input type="radio" id="male" name="gender" value="male" />
+        <label for="male">Male</label>
+        <br />
+
+        <input type="radio" id="female" name="gender" value="female" />
+        <label for="female">Female</label>
+        <br /><br />
+
+        <label for="education">Education</label>
+        <select name="userEdu" id="education">
+          <option value="ug">Under-graduate</option>
+          <option value="pg">Post-graduate</option>
+          <option value="m">Matric</option>
+          <option value="i">Intermediate</option>
+        </select>
+        <br /><br />
+
+        <label for="profession">Profession</label>
+        <select name="userProf" id="profession">
+          <option value="std">Student</option>
+          <option value="te">Teacher</option>
+          <option value="dr">Doctor</option>
+          <option value="te">Teacher</option>
+        </select>
+        <br /><br />
+
+        <label for="address">Address: </label><br />
+        <textarea name="userAddress" id=""></textarea>
+      </fieldset>
+    </form>
+  </body>
+</html>
