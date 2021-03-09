@@ -105,8 +105,18 @@
         <br /><br />
 
         <label for="address">Address: </label><br />
-        <textarea name="userAddress" id=""></textarea>
+        <textarea name="userAddress" id="address" rows="5" cols="50"></textarea>
+        <br /><br />
+
+        <button
+          type="submit"
+          onclick="get('name','male','female','education','profession','address')"
+        >
+          Submit
+        </button>
       </fieldset>
+      <br />
+      <div id="popuation"></div>
     </form>
   </body>
 </html>
